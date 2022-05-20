@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
 
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter App',
       home: Scaffold(
         appBar: AppBar(
@@ -17,6 +18,12 @@ class MyApp extends StatelessWidget {
         ),
         body: Center(
           child: Text("MyApp"),
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Text("ADD"),
+          onPressed: (){
+            print("Test");
+          },
         ),
       ),
     );
